@@ -1,0 +1,1216 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: rgb(211, 211, 211);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(77, 78, 78);
+  border-radius: 80px;
+}
+
+header {
+  width: 100%;
+  height: 37vh;
+  background: linear-gradient(rgba(236, 234, 234, 0.75), rgba(5, 7, 12, 0.75)), url(../assets/img/tonel3.jpg);
+  background-position-y: 70%;
+  display: flex;
+  flex-direction: column;
+}
+header .tituLogo {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header .tituLogo .logo {
+  width: auto;
+  height: 18vh;
+}
+header .tituLogo h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.6rem;
+  color: rgb(255, 255, 255);
+  height: 4vh;
+  font-weight: bolder;
+  margin: 0;
+}
+header .tituLogo h2 {
+  font-family: "Maven Pro", sans-serif;
+  font-size: 1.1rem;
+  margin: 0;
+  padding-top: 0.5rem;
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+}
+header #menu,
+header #menu-check {
+  display: none;
+}
+header .navbar-nav {
+  position: absolute;
+  top: 8rem;
+  right: 5rem;
+}
+header .navbar-nav .nav-item {
+  position: absolute;
+}
+header .navbar-nav .nav-item .nav-link {
+  position: absolute;
+}
+header .navbar-nav .nav-item .nav-link img {
+  width: 50px;
+  position: absolute;
+}
+header nav {
+  width: 100%;
+  height: 6vh;
+  display: flex;
+  align-items: flex-end;
+}
+header nav ul {
+  width: 100%;
+  height: 3vh;
+  display: flex;
+  justify-content: center;
+  gap: 8rem;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+header nav ul li {
+  font-size: 1rem;
+  height: 3.1vh;
+  display: flex;
+  align-items: center;
+}
+header nav ul li a {
+  height: 3vh;
+  text-decoration: none;
+  font-family: monospace;
+  color: rgb(255, 255, 255);
+}
+header nav ul li a:hover {
+  color: rgb(180, 178, 250);
+}
+header nav ul li a:nth-child(1).activo {
+  transform: scale(1.1, 1.2);
+  font-weight: bold;
+}
+
+main {
+  width: 100%;
+  background-color: rgb(211, 211, 211);
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.mainIdex {
+  height: 180vh;
+}
+
+.mainAcercaDe {
+  width: 100%;
+  height: 190vh;
+}
+
+.mainProductos {
+  width: 100%;
+  height: 250vh;
+}
+
+.mainUbicacion {
+  width: 100%;
+}
+
+.mainContacto {
+  width: 100%;
+}
+
+.contenedorUbicacion {
+  display: grid;
+  grid-template-areas: "encabezado" "seccion" "pie";
+  grid-template-columns: 1fr;
+  grid-template-rows: 7.4fr 13fr 1.4fr;
+}
+
+.header {
+  grid-area: encabezado;
+}
+
+.main {
+  grid-area: seccion;
+}
+
+.footer {
+  grid-area: pie;
+}
+
+.contenedorContacto {
+  display: grid;
+  grid-template-areas: "encabezado" "seccion" "pie";
+  grid-template-columns: 1fr;
+  grid-template-rows: 7.4fr 13fr 1.4fr;
+}
+
+.header {
+  grid-area: encabezado;
+}
+
+.main {
+  grid-area: seccion;
+}
+
+.footer {
+  grid-area: pie;
+}
+
+.conteiner_card {
+  width: 100%;
+  height: 110vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1vw;
+}
+.conteiner_card h2 {
+  width: 100%;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Maven Pro", sans-serif;
+}
+.conteiner_card .card {
+  width: 23vw;
+  height: 31.5vh;
+  background-color: rgb(146, 92, 92);
+  border-radius: 16px 16px 16px 16px;
+  box-shadow: 7px 7px 7px 0px rgb(27, 27, 27);
+  transition: all 400ms ease;
+}
+.conteiner_card .card:hover {
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.4);
+  transform: scale(1.04, 1.04);
+}
+.conteiner_card .card a img {
+  width: 100%;
+  height: 27vh;
+  border-radius: 12px 12px 0px 0px;
+}
+.conteiner_card .card p {
+  height: 3.5vh;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.nuevos_productos {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.nuevos_productos h2 {
+  width: 100%;
+  height: 5vh;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-family: "Maven Pro", sans-serif;
+}
+.nuevos_productos .nuevo_card {
+  width: 23vw;
+  height: 33vh;
+  background-color: rgb(146, 92, 92);
+  border-radius: 16px 16px 16px 16px;
+  box-shadow: 5px 5px 5px 0px rgb(27, 27, 27);
+  transition: all 400ms ease;
+}
+.nuevos_productos .nuevo_card:hover {
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.4);
+  transform: scale(1.04, 1.04);
+}
+.nuevos_productos .nuevo_card a img {
+  width: 100%;
+  height: 29vh;
+  border-radius: 16px 16px 0px 0px;
+}
+.nuevos_productos .nuevo_card p {
+  height: 3.5vh;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedorProductos {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.contenedorProductos h2 {
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 1.5rem;
+  font-family: "Maven Pro", sans-serif;
+}
+.contenedorProductos #tarjetaProducto {
+  width: 18%;
+  height: 37vh;
+  background-color: rgb(146, 92, 92);
+  border-radius: 12px 12px 12px 12px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  transition: all 400ms ease;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.contenedorProductos #tarjetaProducto:hover {
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-4%);
+}
+.contenedorProductos #tarjetaProducto .prodImg {
+  width: 100%;
+  height: 23vh;
+  border-radius: 12px 12px 0px 0px;
+}
+.contenedorProductos #tarjetaProducto .nombreProd {
+  width: 100%;
+  height: 3vh;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedorProductos #tarjetaProducto .precio {
+  font-weight: bolder;
+  font-size: 1rem;
+}
+.contenedorProductos #tarjetaProducto .btnCompra {
+  width: 10vw;
+  margin-left: 22%;
+  margin-right: 22%;
+  background-color: rgb(220, 219, 219);
+  height: 5vh;
+  border-radius: 4px 4px 4px 4px;
+  border: 1px;
+  font-weight: bold;
+}
+.contenedorProductos #tarjetaProducto .btnCompra:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(58, 1, 1);
+}
+
+footer {
+  background-color: black;
+  height: 7vh;
+  width: 100%;
+  display: flex;
+}
+footer .redes {
+  width: 10%;
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  justify-content: center;
+}
+footer .redes a {
+  display: flex;
+  align-items: center;
+}
+footer .redes a img {
+  width: auto;
+  height: 4.5vh;
+}
+footer .parrafoFooter {
+  color: rgb(199, 199, 199);
+  width: 90%;
+  height: 7vh;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 15px;
+}
+footer .parrafoFooter p {
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 0rem;
+}
+
+.historiaImg {
+  width: 29vw;
+}
+.historiaImg img {
+  width: 28vw;
+  height: 45vh;
+  -webkit-clip-path: ellipse(47% 42% at center);
+          clip-path: ellipse(47% 42% at center);
+}
+
+.nuestroContacto {
+  width: 20%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nuestroContacto a img {
+  width: 150px;
+}
+
+.video {
+  width: 30vw;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.video iframe {
+  width: 28vw;
+  height: 37vh;
+}
+
+.contenedorInfoHistoria {
+  width: 100%;
+  height: 110vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.contenedorInfoHistoria .historia {
+  width: 100%;
+  height: 52vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.contenedorInfoHistoria .historia .historiaText {
+  height: 39vh;
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.contenedorInfoHistoria .historia .historiaText h2 {
+  width: 94%;
+  font-size: 1.6rem;
+  margin-left: 2rem;
+  font-weight: bold;
+  font-family: "Maven Pro", sans-serif;
+}
+.contenedorInfoHistoria .historia .historiaText p {
+  width: 94%;
+  margin-left: 2rem;
+  font-size: 1.4rem;
+  line-height: 2;
+  font-family: "Times New Roman", Times, serif;
+  text-align: justify;
+  font-style: oblique;
+}
+
+.infoDistribucion {
+  height: 52vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.infoDistribucion .infoText {
+  width: 70vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.infoDistribucion .infoText div h2 {
+  width: 100%;
+  font-family: "Maven Pro", sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-left: 2rem;
+}
+.infoDistribucion .infoText div p {
+  font-size: 1.3rem;
+  width: 94%;
+  line-height: 2;
+  font-family: "Times New Roman", Times, serif;
+  text-align: justify;
+  margin-left: 2rem;
+}
+
+.mapa {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.mapa h3 {
+  font-size: 1.5rem;
+  font-family: "Maven Pro", sans-serif;
+}
+.mapa iframe {
+  width: 35vw;
+  height: 45vh;
+}
+.mapa .direction {
+  text-decoration: none;
+  color: rgb(53, 40, 174);
+  font-size: 1.2rem;
+  width: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mapa .direction:hover {
+  background-color: rgb(144, 141, 141);
+  border-radius: 10px 10px 10px 10px;
+  color: white;
+}
+.mapa .direction:active {
+  background-color: rgb(70, 69, 69);
+}
+
+.formulario {
+  width: 40vw;
+  height: 64vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.formulario h2 {
+  font-family: "Maven Pro", sans-serif;
+  font-size: 1.3rem;
+}
+.formulario form fieldset {
+  width: 30vw;
+  height: 50vh;
+  background-color: rgb(146, 92, 92);
+  font-size: 1rem;
+  border: solid 3px;
+  border-radius: 8px 8px 8px 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.formulario form fieldset .datosPersonales {
+  display: flex;
+  flex-direction: column;
+}
+.formulario form fieldset .datosPersonales input {
+  width: 20vw;
+  height: 4vh;
+  padding-left: 10px;
+  border-radius: 4px 4px 4px 4px;
+  border: 0px;
+}
+.formulario form fieldset .datosPersonales select {
+  width: 20vw;
+  height: 4vh;
+}
+.formulario form fieldset .boton {
+  width: 10vw;
+  height: 5vh;
+  border-radius: 4px 4px 4px 4px;
+  border: 1px;
+}
+.formulario form fieldset .boton:hover {
+  color: white;
+  background-color: black;
+}
+
+.slide {
+  margin-top: 40px;
+}
+
+.carousel-inner {
+  width: 70vw;
+}
+
+.contenedorCarrito {
+  width: 100%;
+  height: 120vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+.contenedorCarrito .logoCarrito {
+  margin: 0;
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedorCarrito .logoCarrito h2 {
+  width: 50%;
+  height: 5vh;
+  text-align: center;
+}
+.contenedorCarrito .funcionCompra {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contenedorCarrito .funcionCompra h3 {
+  width: 100%;
+  text-align: center;
+}
+.contenedorCarrito .funcionCompra #compraCarrito {
+  width: 10vw;
+  background-color: rgb(196, 45, 45);
+  height: 5vh;
+  border-radius: 4px 4px 4px 4px;
+  border: 1px;
+  font-weight: bold;
+}
+.contenedorCarrito .funcionCompra #compraCarrito:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(58, 1, 1);
+}
+.contenedorCarrito #carrito {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+.contenedorCarrito #carrito .container {
+  width: 20vw;
+  height: 15vh;
+}
+
+@media screen and (max-width: 1662px) {
+  .conteiner_card .card {
+    width: 26vw;
+  }
+  .conteiner_card .card p {
+    font-size: 1rem;
+  }
+}
+.nuevos_productos .nuevo_card {
+  width: 25vw;
+}
+.nuevos_productos .nuevo_card p {
+  font-size: 1.1rem;
+}
+
+@media screen and (max-width: 1596px) {
+  .productos section {
+    width: 31vw;
+  }
+  .contenedorInfoHistoria .historia .historiaText h2 {
+    font-size: 1.2rem;
+  }
+  .contenedorInfoHistoria .historia .historiaText p {
+    font-size: 1.1rem;
+  }
+  .contenedorInfoHistoria .infoDistribucion .infoText p {
+    font-size: 1rem;
+  }
+  .contenedorInfoHistoria .infoDistribucion .infoText h2 {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 1350px) {
+  header h1 {
+    font-size: 1.3rem;
+  }
+  .productos section a h3 {
+    font-size: 0.9rem;
+  }
+  .mainProductos .conAlcohol article p {
+    font-size: 0.9rem;
+  }
+  .mainProductos .sinAlcohol article p {
+    font-size: 0.9rem;
+  }
+  .mainProductos .otrosProductos article p {
+    font-size: 0.9rem;
+  }
+  .nuestroContacto a img {
+    width: 100px;
+  }
+}
+@media screen and (max-width: 1276px) {
+  header nav ul li a:nth-child(1).activo {
+    transform: scale(1, 1.1);
+  }
+  .mainIdex {
+    height: 260vh;
+  }
+  .conteiner_card {
+    height: 140vh;
+  }
+  .conteiner_card .card {
+    width: 35vw;
+  }
+  .nuevos_productos {
+    height: 100vh;
+  }
+  .nuevos_productos .nuevo_card {
+    width: 35vw;
+  }
+  .mainAcercaDe {
+    height: 300vh;
+  }
+  .contenedorInfoHistoria {
+    height: 210vh;
+  }
+  .contenedorInfoHistoria .historia {
+    height: 100vh;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  .contenedorInfoHistoria .historia .historiaText {
+    width: 100vw;
+    height: 45vh;
+    align-items: center;
+  }
+  .contenedorInfoHistoria .historia .historiaText p,
+.contenedorInfoHistoria .historia .historiaText h2 {
+    margin: 0;
+  }
+  .contenedorInfoHistoria .historia .historiaImg {
+    height: 51vh;
+    width: 39vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .contenedorInfoHistoria .historia .historiaImg img {
+    width: 39vw;
+    height: 51vh;
+  }
+  .infoDistribucion {
+    height: 100vh;
+    flex-wrap: wrap;
+  }
+  .infoDistribucion .infoText {
+    width: 100vw;
+    height: 45vh;
+    align-items: center;
+  }
+  .infoDistribucion .infoText div h2 {
+    padding-bottom: 1rem;
+    margin: 0 1rem 0 1rem;
+    width: 90vw;
+  }
+  .infoDistribucion .infoText div p {
+    margin: 0 1rem 0 1rem;
+    width: 90vw;
+  }
+  .infoDistribucion .video {
+    height: 46vh;
+    width: 39vw;
+  }
+  .infoDistribucion .video iframe {
+    width: 38vw;
+    height: 45vh;
+  }
+  .mapa iframe {
+    width: 50vw;
+  }
+}
+@media screen and (max-width: 1152px) {
+  header nav ul {
+    gap: 6rem;
+  }
+  footer .redes a img {
+    height: 4vh;
+  }
+  .mainProductos {
+    height: 320vh;
+  }
+  .productos {
+    height: 50vh;
+  }
+  .productos section {
+    width: 30vw;
+    height: 29vh;
+  }
+  .productos section a img {
+    height: 25vh;
+  }
+  .productos section a h3 {
+    height: 4vh;
+    font-size: 0.9rem;
+  }
+  .conAlcohol article {
+    height: 25vh;
+  }
+  .conAlcohol article a img {
+    height: 18vh;
+  }
+  .conAlcohol article a p {
+    font-size: 0.9rem;
+  }
+  .sinAlcohol article {
+    height: 25vh;
+  }
+  .sinAlcohol article a img {
+    height: 18vh;
+  }
+  .sinAlcohol article a p {
+    font-size: 0.9rem;
+  }
+  .otrosProductos article {
+    height: 25vh;
+  }
+  .otrosProductos article a img {
+    height: 18vh;
+  }
+  .otrosProductos article a p {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 958px) {
+  header nav ul {
+    gap: 5rem;
+  }
+  header nav ul li {
+    font-size: 0.8rem;
+  }
+  .mainIdex {
+    height: 420vh;
+  }
+  .conteiner_card {
+    height: 250vh;
+  }
+  .conteiner_card .card {
+    width: 51vw;
+  }
+  .nuevos_productos {
+    height: 140vh;
+  }
+  .nuevos_productos .nuevo_card {
+    width: 51vw;
+  }
+  footer .redes {
+    width: 20%;
+  }
+  footer .parrafoFooter {
+    width: 80%;
+  }
+  .carousel-inner {
+    width: 80vw;
+  }
+  .mainProductos {
+    height: 420vh;
+  }
+  .conAlcohol {
+    height: 100vh;
+  }
+  .conAlcohol article {
+    width: 22vw;
+  }
+  .sinAlcohol {
+    height: 100vh;
+  }
+  .sinAlcohol article {
+    width: 22vw;
+  }
+  .otrosProductos {
+    height: 100vh;
+  }
+  .otrosProductos article {
+    width: 22vw;
+  }
+}
+@media screen and (max-width: 814px) {
+  header nav ul {
+    gap: 3.6rem;
+  }
+  .carousel-inner {
+    width: 100vw;
+  }
+  .nuestroContacto a img {
+    width: 80px;
+  }
+  .formulario form fieldset {
+    width: 270px;
+  }
+  .formulario form fieldset .datosPersonales input {
+    width: 250px;
+  }
+  .formulario form fieldset .datosPersonales select {
+    width: 250px;
+  }
+  .formulario form fieldset .boton {
+    width: 20vw;
+  }
+  .mainAcercaDe {
+    height: 280vh;
+  }
+  .contenedorInfoHistoria {
+    height: 205vh;
+  }
+  .contenedorInfoHistoria .historia {
+    height: 100vh;
+  }
+  .contenedorInfoHistoria .historia .historiaText {
+    height: 45vh;
+  }
+  .contenedorInfoHistoria .historia .historiaText h2 {
+    padding: 1rem;
+  }
+  .contenedorInfoHistoria .historia .historiaText p {
+    padding: 1rem;
+  }
+  .contenedorInfoHistoria .historia .historiaImg {
+    height: 51vh;
+    width: 65vw;
+  }
+  .contenedorInfoHistoria .historia .historiaImg img {
+    width: 63vw;
+    height: 51vh;
+  }
+  .infoDistribucion .infoText {
+    align-items: center;
+  }
+  .infoDistribucion .infoText div p {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 0 1rem 0 1rem;
+    width: 95vw;
+  }
+  .infoDistribucion .infoText div h2 {
+    padding-left: 1rem;
+  }
+  .infoDistribucion .video {
+    height: 55vh;
+    width: 60vw;
+  }
+  .infoDistribucion .video iframe {
+    width: 59vw;
+    height: 48vh;
+  }
+  .conAlcohol article p {
+    font-size: 0.7rem;
+  }
+  .sinAlcohol article p {
+    font-size: 0.7rem;
+  }
+  .otrosProductos article p {
+    font-size: 0.7rem;
+  }
+  .mapa iframe {
+    width: 65vw;
+  }
+}
+@media screen and (max-width: 674px) {
+  header {
+    height: 35vh;
+  }
+  header #menu-check:checked ~ label #menu-abrir {
+    display: none;
+  }
+  header #menu-check:checked ~ label #menu-cerrar {
+    display: block;
+  }
+  header #menu-check:not(:checked) ~ nav {
+    display: none;
+  }
+  header #menu-check:checked ~ nav {
+    display: block;
+    width: 14.5rem;
+    height: 17rem;
+    border-radius: 8px;
+    top: 0.5em;
+    right: 0.3em;
+  }
+  header #menu {
+    display: block;
+    color: rgb(255, 255, 255);
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: absolute;
+    right: 0.5em;
+    top: 0.2em;
+    z-index: 9999;
+  }
+  header #menu span {
+    font-family: "Maven Pro", sans-serif;
+  }
+  header #menu #menu-cerrar {
+    display: none;
+  }
+  header nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-color: rgb(26, 26, 26);
+    padding-top: 1rem;
+    padding-right: 3.5rem;
+    opacity: 1;
+    color: white;
+  }
+  header nav ul {
+    display: block;
+    text-align: right;
+    font-size: 1.1rem;
+  }
+  header nav ul li {
+    display: block;
+    text-align: right;
+    font-size: 0.9rem;
+    margin-top: 1.5rem;
+  }
+  header nav ul li a:nth-child(1).activo {
+    color: rgb(154, 151, 245);
+    transform: none;
+  }
+  .contenedorInfoHistoria .historia .historiaText h2 {
+    text-align: center;
+    margin: 0;
+  }
+  .contenedorInfoHistoria .infoDistribucion {
+    height: 140vh;
+  }
+  .contenedorInfoHistoria .infoDistribucion .infoText {
+    height: 60vh;
+  }
+  .contenedorInfoHistoria .infoDistribucion .infoText h2 {
+    text-align: center;
+    margin: 0;
+  }
+  .contenedorInfoHistoria .infoDistribucion .infoText p {
+    margin: 0;
+  }
+  .contenedorUbicacion {
+    grid-template-rows: 6.6fr 13fr 1.34fr;
+  }
+  .contenedorContacto {
+    grid-template-rows: 6.6fr 13fr 1.34fr;
+  }
+}
+@media screen and (max-width: 596px) {
+  footer .redes a img {
+    height: 3vh;
+  }
+  .conteiner_card .card {
+    width: 70vw;
+  }
+  .conteiner_card .card p {
+    font-size: 0.8rem;
+  }
+  .nuevos_productos .nuevo_card {
+    width: 75vw;
+  }
+  .nuevos_productos .nuevo_card p {
+    font-size: 0.8rem;
+  }
+  footer .parrafoFooter {
+    font-size: 0.6rem;
+  }
+  .contenedorInfoHistoria .historia .historiaText {
+    height: 63vh;
+  }
+  .contenedorInfoHistoria .historia .historiaImg {
+    height: 37vh;
+  }
+  .contenedorInfoHistoria .historia .historiaImg img {
+    height: 37vh;
+  }
+  .mainProductos {
+    height: 600vh;
+  }
+  .productos {
+    height: 110vh;
+  }
+  .productos section {
+    width: 70vw;
+  }
+  .conAlcohol {
+    height: 160vh;
+  }
+  .conAlcohol article {
+    width: 45vw;
+  }
+  .conAlcohol article p {
+    font-size: 0.9rem;
+  }
+  .sinAlcohol {
+    height: 160vh;
+  }
+  .sinAlcohol article {
+    width: 45vw;
+  }
+  .sinAlcohol article p {
+    font-size: 0.9rem;
+  }
+  .otrosProductos {
+    height: 160vh;
+  }
+  .otrosProductos article {
+    width: 45vw;
+  }
+  .otrosProductos article p {
+    font-size: 0.9rem;
+  }
+  .mapa h3 {
+    font-size: 1.1rem;
+  }
+  .mapa iframe {
+    width: 75vw;
+  }
+  .mapa .direction {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 518px) {
+  footer .redes {
+    width: 30%;
+  }
+  .mainAcercaDe {
+    height: 290vh;
+  }
+  .contenedorInfoHistoria {
+    height: 245vh;
+  }
+  .contenedorInfoHistoria .historia {
+    height: 110vh;
+  }
+  .contenedorInfoHistoria .historia .historiaText {
+    height: 73vh;
+  }
+  .contenedorInfoHistoria .historia .historiaText p {
+    font-size: 1rem;
+  }
+  .contenedorInfoHistoria .historia .historiaImg {
+    width: 75vw;
+  }
+  .contenedorInfoHistoria .historia .historiaImg img {
+    width: 75vw;
+  }
+  .contenedorInfoHistoria .infoDistribucion {
+    height: 120vh;
+  }
+  .contenedorInfoHistoria .infoDistribucion .infoText {
+    height: 75vh;
+  }
+  .contenedorInfoHistoria .infoDistribucion .video {
+    height: 40vh;
+    width: 90vw;
+  }
+  .contenedorInfoHistoria .infoDistribucion .video iframe {
+    height: 39vh;
+    width: 85vw;
+  }
+  .mainProductos {
+    height: 500vh;
+  }
+  .mainProductos .conAlcohol {
+    height: 130vh;
+  }
+  .mainProductos .conAlcohol article {
+    width: 45vw;
+    height: 19vh;
+  }
+  .mainProductos .conAlcohol article a img {
+    height: 13vh;
+  }
+  .mainProductos .conAlcohol article p {
+    font-size: 0.8rem;
+  }
+  .mainProductos .sinAlcohol {
+    height: 130vh;
+  }
+  .mainProductos .sinAlcohol article {
+    width: 45vw;
+    height: 19vh;
+  }
+  .mainProductos .sinAlcohol article a img {
+    height: 13vh;
+  }
+  .mainProductos .sinAlcohol article p {
+    font-size: 0.8rem;
+  }
+  .mainProductos .otrosProductos {
+    height: 110vh;
+  }
+  .mainProductos .otrosProductos article {
+    width: 45vw;
+    height: 19vh;
+  }
+  .mainProductos .otrosProductos article a img {
+    height: 13vh;
+  }
+  .mainProductos .otrosProductos article p {
+    font-size: 0.8rem;
+  }
+  .nuestroContacto {
+    width: 90px;
+  }
+  .nuestroContacto a img {
+    width: 40px;
+  }
+  .formulario form fieldset {
+    width: 220px;
+  }
+  .formulario form fieldset .datosPersonales input {
+    width: 200px;
+  }
+  .formulario form fieldset .datosPersonales select {
+    width: 200px;
+  }
+  .formulario form fieldset .boton {
+    width: 30vw;
+    height: 4vh;
+  }
+}
+@media screen and (max-width: 402px) {
+  footer .parrafoFooter {
+    width: 70%;
+    font-size: 0.5rem;
+  }
+  .conteiner_card .card {
+    width: 85vw;
+  }
+  .nuevos_productos .nuevo_card {
+    width: 85vw;
+  }
+  .contenedorInfoHistoria .infoDistribucion .infoText p {
+    margin: 0;
+  }
+  .contenedorInfoHistoria .infoDistribucion .infoText h2 {
+    margin: 0;
+  }
+  .mapa iframe {
+    width: 85vw;
+  }
+  .nuestroContacto {
+    justify-content: flex-end;
+  }
+  .whatsapp {
+    justify-content: flex-start;
+  }
+}/*# sourceMappingURL=style.css.map */

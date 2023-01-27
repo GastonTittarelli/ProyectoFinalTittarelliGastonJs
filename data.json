@@ -1,0 +1,72 @@
+[
+    {
+        "img": "../assets/img/con_alcohol/beefeater.jpg",
+        "nombre": "Gin - Beefeater 1L",
+        "precio": 3000,
+        "cantidad": 1,
+        "id": 1
+    },
+    {
+        "img": "../assets/img/con_alcohol/corona.png",
+        "nombre": "Cerveza - Corona 330ml  (pack x6)",
+        "precio": 2000,
+        "cantidad": 1,
+        "id": 2
+    },
+    {
+        "img": "../assets/img/con_alcohol/fernet.jfif",
+        "nombre": "Fernet - Branca 750ml",
+        "precio": 2300,
+        "cantidad": 1,
+        "id": 3
+    },
+    {
+        "img": "../assets/img/con_alcohol/havanaClub.jpg",
+        "nombre": "Ron - Havana Club Añejo 7 años 750ml",
+        "precio": 2500,
+        "cantidad": 1,
+        "id": 4
+    },
+    {
+        "img": "../assets/img/con_alcohol/heinekenLata.jpg",
+        "nombre": "Cerveza - Heineken 330ml (pack x6)",
+        "precio": 1000,
+        "cantidad": 1,
+        "id": 5
+    },
+    {
+        "img": "../assets/img/con_alcohol/jackDanielsBottle.png",
+        "nombre": "Whisky - Jack Daniels 750ml",
+        "precio": 3500,
+        "cantidad": 1,
+        "id": 6
+    },
+    {
+        "img": "../assets/img/con_alcohol/johnnieWalker.jpg",
+        "nombre": "Whisky - Johnnie Walker 750ml",
+        "precio": 4000,
+        "cantidad": 1,
+        "id": 7
+    },
+    {
+        "img": "../assets/img/con_alcohol/luigiBoscaDelAlma.jpg",
+        "nombre": "Vino - LB Chardonnay 750ml (caja x6)",
+        "precio": 3000,
+        "cantidad": 1,
+        "id": 8
+    },
+    {
+        "img": "../assets/img/con_alcohol/schneider.jpg",
+        "nombre": "Cerveza - Schneider 330ml (pack x6)",
+        "precio": 1100,
+        "cantidad": 1,
+        "id": 9
+    },
+    {
+        "img": "../assets/img/con_alcohol/smirnoff.png",
+        "nombre": "Vodka - Smirnoff 700ml",
+        "precio": 1500,
+        "cantidad": 1,
+        "id": 10
+    }
+]

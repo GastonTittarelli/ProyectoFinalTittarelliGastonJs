@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nuestra ubicación - Puedes conocer nuestra sede y retirar todos tus productos">
+    <meta name="keywords" content="distribuidora, Tittarelli, bebidas, ubicación, General Deheza, Deheza, lugar, mapa, dónde está">
+    <title>Ubicación | Distribuidora Tittarelli</title>
+    <link rel="shortcut icon" href="../assets/img/iconos/DLogo.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="../scss/style.css">
+</head>
+
+<body>
+    <div class="contenedorUbicacion">
+        <header class="header">
+            <div class="tituLogo">
+                <a href="../index.html"><img class="logo" src="../assets/img/iconos/DLogo.png" alt="Logo Distribuidora Tittarelli"></a>
+                <h1>Distribuidora Tittarelli</h1>
+                <h2>-Directo a tu Hogar-</h2>
+            </div>
+            <!-- propiedad del menu hamburguesa -->
+            <input type="checkbox" id="menu-check">
+            <label id="menu" for="menu-check">
+                <span id="menu-abrir">&#9776;</span>
+                <span id="menu-cerrar">x</span>
+            </label>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../pages/acercaDeNosotros.html">Acerca de nosotros</a></li>
+                    <li><a href="../pages/nuestrosProductos.html">Nuestros productos</a></li>
+                    <li><a class="activo" href="#">Ubicación</a></li>
+                    <li><a href="../pages/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="mainUbicacion main">
+            <section class="mapa wow fadeInUp">
+                <h3>¿Dónde nos encontramos?</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1677.6247706542722!2d-63.79263517834483!3d-32.7591125325827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95cdc7a54e7b8fb1%3A0x72b51a33dc84de6!2sDistribuidora%20Tittarelli!5e0!3m2!1ses!2sar!4v1664480574364!5m2!1ses!2sar"
+                    width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <a class="direction"
+                    href="https://www.google.com.ar/maps/place/Distribuidora+Tittarelli/@-32.7591125,-63.7926717,18z/data=!3m1!4b1!4m5!3m4!1s0x95cdc7a54e7b8fb1:0x72b51a33dc84de6!8m2!3d-32.7591138!4d-63.792021">
+                    <p>📍 Asunción 376, General Deheza, Córdoba.</p>
+                </a>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="redes">
+                <a href="https://www.facebook.com/"><img src="../assets//img/iconos/facebookIcon.png"
+                        alt="facebook logo"></a>
+                <a href="https://www.instagram.com/"><img src="../assets/img/iconos/instagramIcon.png"
+                        alt="Instagram logo"></a>
+            </div>
+            <div class="parrafoFooter">
+                <p>Distribuidora Tittarelli - Todos los derechos reservados ©</p>
+            </div>
+        </footer>
+    </div>
+    <script src="../js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>

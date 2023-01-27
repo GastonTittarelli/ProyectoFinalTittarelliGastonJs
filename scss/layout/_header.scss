@@ -1,0 +1,104 @@
+header {
+    width: 100%;
+    height: 37vh;
+    background: linear-gradient(rgba(236, 234, 234, 0.75), rgba(5, 7, 12, 0.75)), url(../assets/img/tonel3.jpg);
+    background-position-y: 70%;
+    display: flex;
+    flex-direction: column;
+
+    .tituLogo {
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .logo {
+            width: auto;
+            height: 18vh;
+        }
+
+        h1 {
+            font-family: "Playfair Display", serif;
+            font-size: 1.6rem;
+            color: rgb(255, 255, 255);
+            height: 4vh;
+            font-weight: bolder;
+            margin: 0;
+        }
+
+        h2 {
+            font-family: "Maven Pro", sans-serif;
+            font-size: 1.1rem;
+            margin: 0;
+            padding-top: 0.5rem;
+            color: rgb(255, 255, 255);
+            font-weight: bolder;
+        }
+    }
+
+    // propiedad del menu hamburguesa //
+    #menu,
+    #menu-check {
+        display: none;
+    }
+    
+    //modal//
+    .navbar-nav{
+        position: absolute;
+        top: 8rem;
+        right: 5rem;
+        .nav-item{
+            position:absolute;
+            .nav-link{
+                position:absolute;
+                img{
+                    width: 50px;
+                    position:absolute;
+                }
+            }
+        }
+    }
+
+    nav {
+        width: 100%;
+        height: 6vh;
+        display: flex;
+        align-items: flex-end;
+
+        ul {
+            width: 100%;
+            height: 3vh;
+            display: flex;
+            justify-content: center;
+            gap: 8rem;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                font-size: 1rem;
+                height: 3.1vh;
+                display: flex;
+                align-items: center;
+
+                a {
+                    height: 3vh;
+                    text-decoration: none;
+                    font-family: monospace;
+                    color: rgb(255, 255, 255);
+
+                    &:hover {
+                        color: rgb(180, 178, 250);
+                    }
+
+                    &:nth-child(1).activo{
+                        transform: scale(1.1, 1.2);
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}

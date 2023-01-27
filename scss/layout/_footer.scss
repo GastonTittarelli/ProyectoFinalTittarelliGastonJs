@@ -1,0 +1,39 @@
+footer {
+    background-color: $footer;
+    height: 7vh;
+    width: 100%;
+    display: flex;
+
+    .redes {
+        width: 10%;
+        height: 7vh;
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        justify-content: center;
+
+        a {
+            display: flex;
+            align-items: center;
+            img {
+                width: auto;
+                height: 4.5vh;
+            }
+        }
+    }
+
+    .parrafoFooter {
+        color: rgb(199, 199, 199);
+        width: 90%;
+        height: 7vh;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        padding-right: 15px;
+
+        p {
+            font-family: 'Times New Roman', Times, serif;
+            margin-bottom: 0rem;
+        }
+    }
+}

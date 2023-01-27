@@ -1,0 +1,37 @@
+.contenedorUbicacion {
+    display: grid;
+    grid-template-areas: "encabezado" "seccion" "pie";
+    grid-template-columns: 1fr;
+    grid-template-rows: 7.4fr 13fr 1.4fr;
+}
+
+.header {
+    grid-area: encabezado;
+}
+
+.main {
+    grid-area: seccion;
+}
+
+.footer {
+    grid-area: pie;
+}
+
+.contenedorContacto {
+    display: grid;
+    grid-template-areas: "encabezado" "seccion" "pie";
+    grid-template-columns: 1fr;
+    grid-template-rows: 7.4fr 13fr 1.4fr;
+}
+
+.header {
+    grid-area: encabezado;
+}
+
+.main {
+    grid-area: seccion;
+}
+
+.footer {
+    grid-area: pie;
+}

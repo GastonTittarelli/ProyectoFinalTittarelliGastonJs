@@ -1,0 +1,57 @@
+.contenedorCarrito{
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    flex-wrap: wrap;
+    .logoCarrito{
+        margin: 0;
+        width: 100%;
+        height: 5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        h2{
+            width: 50%;
+            height: 5vh;
+            text-align: center;
+        }
+    }
+    .funcionCompra{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        h3{
+            width: 100%;
+            text-align: center;
+        }
+        #compraCarrito{
+            width: 10vw;
+                background-color: rgb(196, 45, 45);
+                    height: 5vh;
+                    border-radius: 4px 4px 4px 4px;
+                    border: 1px;
+                    font-weight: bold;
+                    
+                    
+                    &:hover {
+                        color: rgb(255, 255, 255);
+                        background-color: rgb(58, 1, 1);
+                    }
+        }
+    }
+    
+    #carrito{
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 30px;
+        .container{
+            width: 20vw;
+            height: 15vh;
+        }
+    }
+}

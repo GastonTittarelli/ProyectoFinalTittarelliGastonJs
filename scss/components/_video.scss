@@ -1,0 +1,12 @@
+.video{
+    width: 30vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    iframe{
+        width: 28vw;
+        height: 37vh;
+    }
+}

@@ -1,0 +1,29 @@
+main {
+    width: 100%;
+    background-color: $main;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.mainIdex {
+    height: 180vh;
+}
+
+.mainAcercaDe {
+    width: 100%;
+    height: 190vh;
+}
+
+.mainProductos {
+    width: 100%;
+    height: 250vh;
+}
+
+.mainUbicacion {
+    width: 100%;
+}
+
+.mainContacto {
+    width: 100%;
+}

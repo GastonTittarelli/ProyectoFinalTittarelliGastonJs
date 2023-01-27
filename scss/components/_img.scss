@@ -1,0 +1,23 @@
+.historiaImg {
+    width: 29vw;
+
+    img {
+        width: 28vw;
+        height: 45vh;
+        clip-path: ellipse(47% 42% at center);
+    }
+}
+
+.nuestroContacto {
+    width: 20%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+        img {
+            width: 150px;
+        }
+    }
+}

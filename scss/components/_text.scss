@@ -1,0 +1,77 @@
+.contenedorInfoHistoria {
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    .historia {
+        width: 100%;
+        height: 52vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+        .historiaText {
+            height: 39vh;
+            width: 70vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            h2 {
+                width: 94%;
+                font-size: 1.6rem;
+                margin-left: 2rem;
+                font-weight: bold;
+                font-family: 'Maven Pro', sans-serif;
+            }
+
+            p {
+                width: 94%;
+                margin-left: 2rem;
+                font-size: 1.4rem;
+                line-height: 2;
+                font-family: 'Times New Roman', Times, serif;
+                text-align: justify;
+                font-style: oblique;
+            }
+        }
+    }
+}
+
+
+.infoDistribucion {
+    height: 52vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    .infoText {
+        width: 70vw;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        div {
+            h2 {
+                width: 100%;
+                font-family: 'Maven Pro', sans-serif;
+                font-size: 1.4rem;
+                font-weight: bold;
+                margin-left: 2rem;
+            }
+
+            p {
+                font-size: 1.3rem;
+                width: 94%;
+                line-height: 2;
+                font-family: 'Times New Roman', Times, serif;
+                text-align: justify;
+                margin-left: 2rem;
+            }
+        }
+    }
+}

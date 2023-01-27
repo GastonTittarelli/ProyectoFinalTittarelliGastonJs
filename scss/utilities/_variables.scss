@@ -1,0 +1,13 @@
+// colores
+$footer: black;
+$cartas: rgb(146, 92, 92);
+$main: rgb(211, 211, 211);
+
+// tarjetas secundarias de "nuestros productos"
+$cards: (
+    ancho: 18%,
+    alto: 37vh,
+    bordes: 12px 12px 12px 12px,
+    sombra: 4px 4px 10px rgba(0,0,0,0.4),
+    transición: all 400ms ease,
+);

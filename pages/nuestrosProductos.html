@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Todos nuestros productos estan a un click de distancia">
+    <meta name="keywords"
+        content="distribuidora, Tittarelli, comprar, catalogo, bebidas, vodka, gaseosa, agua, cerveza, vino, saborizada, jugo, no perecedero">
+    <title>Nuestros Productos | Distribuidora Tittarelli</title>
+    <link rel="shortcut icon" href="../assets/img/iconos/DLogo.ico" type="image/x-icon">
+    <!-- Fuentes de google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
+    <!-- Linkeo para animaciones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- Link al SASS -->
+    <link rel="stylesheet" href="../scss/style.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Librerías interactivas, sweetalert2 y toastify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script defer src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    <script defer src="../js/main.js"></script>
+    <script defer src="../data.json"></script>
+</head>
+
+<body>
+    <header>
+        <div class="tituLogo">
+            <a href="../index.html"><img class="logo" src="../assets/img/iconos/DLogo.png"
+                    alt="Logo Distribuidora Tittarelli"></a>
+            <h1>Distribuidora Tittarelli</h1>
+            <h2>-Directo a tu Hogar-</h2>
+        </div>
+        <input type="checkbox" id="menu-check">
+        <label id="menu" for="menu-check">
+            <span id="menu-abrir">&#9776;</span>
+            <span id="menu-cerrar">x</span>
+        </label>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/acercaDeNosotros.html">Acerca de nosotros</a></li>
+                <li><a class="activo" href="#">Nuestros productos</a></li>
+                <li><a href="../pages/ubicacion.html">Ubicación</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="mainProductos">
+        <div class="contenedorProductos wow fadeInUp">
+            <h2>Nuestros productos</h2>
+            <div class="cardProducto"></div>
+            <!-- cards dinámicas -->
+        </div>
+        <div class="contenedorCarrito wow fadeInUp">
+            <div class="logoCarrito">
+                <h2>Carrito de Compras 🛒</h2>
+            </div>
+            <div class="funcionCompra">
+                <h3>Total de la compra: $<span id="totalCompra">0</span></h3>
+                <button class="comprarCarrito" id="compraCarrito">Comprar carrito</button>
+            </div>
+            <!-- Espacio para mostrar el carrito -->
+            <div id="carrito"></div>
+        </div>
+    </main>
+    <footer>
+        <div class="redes">
+            <a href="https://www.facebook.com/"><img src="../assets//img/iconos/facebookIcon.png"
+                    alt="facebook logo"></a>
+            <a href="https://www.instagram.com/"><img src="../assets/img/iconos/instagramIcon.png"
+                    alt="Instagram logo"></a>
+        </div>
+        <div class="parrafoFooter">
+            <p>Distribuidora Tittarelli - Todos los derechos reservados ©</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="../js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+
+</html>

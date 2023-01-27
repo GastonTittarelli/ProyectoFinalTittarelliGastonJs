@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contáctanos para obtener tus productos de una forma mas sencilla">
+    <meta name="keywords"
+        content="distribuidora, Tittarelli, bebidas, contacto, encargar, pedido, numero, mail, correo">
+    <title>Contacto | Distribuidora Tittarelli</title>
+    <link rel="shortcut icon" href="../assets/img/iconos/DLogo.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="../scss/style.css">
+</head>
+
+<body>
+    <div class="contenedorContacto">
+        <header class="header">
+            <div class="tituLogo">
+                <a href="../index.html"><img class="logo" src="../assets/img/iconos/DLogo.png" alt="Logo Distribuidora Tittarelli"></a>
+                <h1>Distribuidora Tittarelli</h1>
+                <h2>-Directo a tu Hogar-</h2>
+            </div>
+            <!-- propiedad del menu hamburguesa -->
+            <input type="checkbox" id="menu-check">
+            <label id="menu" for="menu-check">
+                <span id="menu-abrir">&#9776;</span>
+                <span id="menu-cerrar">x</span>
+            </label>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../pages/acercaDeNosotros.html">Acerca de nosotros</a></li>
+                    <li><a href="../pages/nuestrosProductos.html">Nuestros productos</a></li>
+                    <li><a href="../pages/ubicacion.html">Ubicación</a></li>
+                    <li><a class="activo" href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="mainContacto main">
+            <section class="wow slideInLeft nuestroContacto whatsapp">
+                <a href="https://web.whatsapp.com/"><img src="../assets/img/iconos/whatsapp.png"
+                        alt="Logo de whatsapp"></a>
+            </section>
+            <section class="formulario">
+                <h2>¡Contáctanos!</h2>
+                <form>
+                    <fieldset>
+                        <div>
+                            <label>Sexo:</label>
+                            <input type="radio" name="sexo" value="hombre" id="sexo_h">
+                            <label for="sexo_h">Hombre</label>
+                            <input type="radio" name="sexo" value="mujer" id="sexo_m">
+                            <label for="sexo_m">Mujer</label>
+                        </div>
+                        <div class="datosPersonales">
+                            <label for="nombreYApellido">Nombre y Apellido</label>
+                            <input type="text" name="nombreYApellido" id="nombreYApellido"
+                                placeholder="Nombre y Apellido">
+                        </div>
+                        <div class="datosPersonales">
+                            <label for="numero_telefono">Teléfono:</label>
+                            <input type="number" name="numero_telefono" id="numero_telefono" placeholder="Numero">
+                        </div>
+                        <div class="datosPersonales">
+                            <label for="email">Correo electrónico:</label>
+                            <input type="email" name="email" id="email" placeholder="Correo">
+                        </div>
+                        <div class="datosPersonales">
+                            <label>Ciudad/Pueblo</label>
+                            <select name="talles">
+                                <option value="las_perdices">Las Perdices</option>
+                                <option value="general_deheza">General Deheza</option>
+                                <option value="general_cabrera">General Cabrera</option>
+                            </select>
+                        </div>
+                        <input class="boton" type="submit" value="Enviar">
+                    </fieldset>
+                </form>
+            </section>
+            <section class="wow slideInRight nuestroContacto">
+                <a href="https://outlook.live.com/mail/0/"><img src="../assets/img/iconos/iconoMail.png"
+                        alt="Imagen de correo electronico"></a>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="redes">
+                <a href="https://www.facebook.com/"><img src="../assets//img/iconos/facebookIcon.png"
+                        alt="facebook logo"></a>
+                <a href="https://www.instagram.com/"><img src="../assets/img/iconos/instagramIcon.png"
+                        alt="Instagram logo"></a>
+            </div>
+            <div class="parrafoFooter">
+                <p>Distribuidora Tittarelli - Todos los derechos reservados ©</p>
+            </div>
+        </footer>
+    </div>
+    <script src="../js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>
